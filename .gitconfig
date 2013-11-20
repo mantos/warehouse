@@ -8,6 +8,8 @@
 	mm = merge --no-ff
 	st = status
 	co = checkout
+	br = branch
+	rs = remote prune
 [core]
 	editor = vim
 [pull]
