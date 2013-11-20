@@ -5,6 +5,9 @@
 	default = matching
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	mm = merge --no-ff
+	st = status
+	co = checkout
 [core]
 	editor = vim
 [pull]
