@@ -25,6 +25,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'AutoClose--Alves'
 Plugin 'bling/vim-airline'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -156,4 +157,4 @@ colorscheme distinguished
 
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
-
+" let coffee_make_options = '--bare --output ../js'
