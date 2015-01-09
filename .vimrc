@@ -1,3 +1,6 @@
+syntax on
+set t_Co=256
+color mango
 set nocompatible              " Don't be compatible with vi
 let mapleader=","             " change the leader to be a comma vs slash
 
@@ -37,6 +40,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 Plugin 'wavded/vim-stylus'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'goatslacker/mango.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -168,7 +172,11 @@ set smarttab                " Handle tabs more intelligently
 set hlsearch                " Highlight searches by default.
 set incsearch               " Incrementally search while typing a /regex
 
-colorscheme distinguished
+" colorscheme distinguished
+" syntax highlighting
+set background=dark     " you can use `dark` or `light` as your background
+syntax on
+color mango
 
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
