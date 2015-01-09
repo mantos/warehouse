@@ -24,7 +24,6 @@ Plugin 'Lokaltog/vim-distinguished'
 Plugin 'scrooloose/nerdtree'
 Plugin 'AutoClose--Alves'
 Plugin 'bling/vim-airline'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
