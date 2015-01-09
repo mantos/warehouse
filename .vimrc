@@ -25,7 +25,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'AutoClose--Alves'
 Plugin 'bling/vim-airline'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'moll/vim-node'
 Plugin 'wincent/command-t'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -86,6 +88,10 @@ set grepprg=ack         " replace the default grep program with ack
 nnoremap <leader>. :lcd %:p:h<CR>
 
 let g:airline#extensions#tabline#enabled = 1
+
+" Set buffer switch
+nnoremap <leader>[ :bprevious<CR>
+nnoremap <leader>] :bnext<CR>
 
 " Disable the colorcolumn when switching modes.  Make sure this is the
 " first autocmd for the filetype here
@@ -158,3 +164,15 @@ colorscheme distinguished
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 " let coffee_make_options = '--bare --output ../js'
+
+" settings plugin syntastic 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['gjslint']
