@@ -25,6 +25,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'AutoClose--Alves'
 Plugin 'bling/vim-airline'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'wincent/command-t'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
