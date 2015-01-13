@@ -192,7 +192,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_javascript_checkers = ['gjslint']
+" let g:syntastic_javascript_checkers = ['gjslint']
 
 " settings for collision with ycm & snipmate
 let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
